@@ -8,7 +8,7 @@ const List = (props) => {
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50  ">
                     <tr>
                         <th scope="col" class="px-6 py-3">
-                            {props.item.Item_Name}
+                            Name
                         </th>
                         <th scope="col" class="px-6 py-3">
                             Color
@@ -17,7 +17,7 @@ const List = (props) => {
                             Category
                         </th>
                         <th scope="col" class="px-6 py-3">
-                            {props.item.Item_Price}
+                            Price
                         </th>
                         <th scope="col" class="px-6 py-3">
                             <span class="sr-only">Edit</span>
@@ -27,7 +27,8 @@ const List = (props) => {
                 <tbody>
                     <tr class="border-b">
                         <th scope="row" class="px-6 py-4 font-medium text-gray-900  whitespace-nowrap">
-                            Apple MacBook Pro 17"
+                            {props.item.Item_Name}
+
                         </th>
                         <td class="px-6 py-4">
                             Sliver
@@ -36,7 +37,7 @@ const List = (props) => {
                             Laptop
                         </td>
                         <td class="px-6 py-4">
-                            $2999
+                            {props.item.Item_Price}
                         </td>
                         <td class="px-6 py-4 text-right">
                             <a href="#" class="font-medium text-blue-600  hover:underline">Edit</a>
